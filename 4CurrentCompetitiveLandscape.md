@@ -1,5 +1,3 @@
-The story you're telling:
-
 ABL Bio has a small but focused portfolio (24 owned families) — heavy on antibody composition, light on CMC/Clinical which makes sense for their stage
 
 The global ADC space is dominated by Genentech/Roche/Novartis with massive portfolios, but Daiichi Sankyo is the most relevant comparator given their topo1 ADC dominance
