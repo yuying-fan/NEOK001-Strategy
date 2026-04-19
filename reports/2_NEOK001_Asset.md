@@ -162,7 +162,7 @@ _2025 ABL Bio Presentation Slide_
 - Similar efficacy pattern to ovarian cancer model
 - ROR1 H-score: 130 & B7-H3 H-score: 130 (high dual expression)
 
-### KPreclinical Findings
+### Preclinical Findings
 _From NEOK Bio's poster abstract for AACR 2026; "Poster 1724: NEOK001: A first-in-class B7-H3xROR1 bispecific ADC demonstrated enhanced efficacy and promising tolerability")_
 - Strong cancer cell killing through dual-targeting with strong bystander killing (for heterogenous solid tumors)
 - Showed broad efficacy across 38 PDX models, with 84% tumor growth inhibition & 53% deep tumor regression in 9 major cancer types
