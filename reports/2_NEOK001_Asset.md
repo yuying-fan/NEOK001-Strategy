@@ -149,7 +149,7 @@ NEOK001 uses **SYNtecan-E™**:
 ## 4. NEOK001 Preclinical Efficacy Data
 *Sources: [[1](https://www.youtube.com/watch?v=GpLdrk-Vdzg&list=PLuQQ6w1jBXamvNuFR1t88Dze2QUv8uw22&index=17)],[[2](https://www.neokbio.com/news-2026-jan21)]*
 
-![NEOKBio Presentation Slide](../images/background/abl206.png)
+![NEOKBio Presentation Slide](../data/images/background/abl206.png)
 _2025 ABL Bio Presentation Slide_
 
 ### Ovarian Cancer Model
