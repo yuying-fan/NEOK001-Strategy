@@ -1,1 +1,0 @@
-# Typical Timeline for ADC - From Development to Market
