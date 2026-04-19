@@ -59,7 +59,6 @@ The Topo-I payload and cleavable SYNtecan-E linker are well-matched to **heterog
 | Jan 2026 | FDA IND clearance received |
 | Mid-2026 | Phase 1 trial initiation planned |
 | 2027 | Clinical data readout expected |
----
 _†CS5001 is a ROR1 ADC co-developed by ABL Bio & LigaChem Biosciences. As of April 2026, it is currently in Phase 1b trial_
 
 <br>
