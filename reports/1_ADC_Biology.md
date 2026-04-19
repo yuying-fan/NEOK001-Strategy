@@ -59,5 +59,5 @@ Currently (of April 15, 2026), there are no FDA approved BsADCs and only 4 have 
 - Three are in oncology: izalontamab brengitecan (EGFRxHER3) by SystImmune/BMS; JSKN003 (two distinct HER2 epitopes) by Shanghai JMT-Bio; and TQB-2102 (two distinct HER2 epitopes) by Chia Tai Tianqing
 - The remaining one is in metabolic disease: MariTide by Amgen, for obesity and Type 2 diabetes.
 
----
----
+<br>
+<hr style="border: 2px solid black;">
