@@ -1,4 +1,4 @@
-# 4. Indication Scoring — Medical & Commercial Feasibility Analysis
+# Indication Scoring — Medical & Commercial Feasibility Analysis
 *Author: Yuying Fan | April 2026*  
 *Full methodology, code and data: [`notebooks/3_indication_scoring.ipynb`](../notebooks/3_indication_scoring.ipynb)*  
 Phase 1 Indication Selection | US Market
@@ -268,20 +268,20 @@ For unmet need scoring, the <span style="color: blue;">median OS values from con
 - Uses inverted min-max (higher raw value = lower score)
 - Higher score = shorter survival = greater unmet need
 
-| Indication | Annual Incidence | % Metastatic | Addressable/yr | mOS 2L+ | Unmet Need | Trial Source |
-|-----------|-----------------|---------------|---------------|---------|-----------|-------------|
-| NSCLC (Lung Adeno) | 91,764 | 57% | 52,305 | 9.4 mo | 68.7 | CheckMate 057 |
-| NSCLC (Lung Squamous) | 57,353 | 57% | 32,691 | 6.0 mo | 80.0 | CheckMate 017 |
-| SCLC | 34,412 | 57% | 19,615 | 8.3 mo | 72.3 | RESILIENT |
-| Gastric/GEJ | 31,510 | 36% | 11,344 | 7.4 mo | 75.3 | RAINBOW |
-| Colorectal | 158,850 | 45% | 71,483 | 12.1 mo | 59.7 | VELOUR |
-| Pancreatic | 67,530 | 51% | 34,440 | 4.2 mo | 86.0 | NAPOLI-1 |
-| Ovarian | 21,010 | 55% | 11,556 | 13.3 mo | 55.7 | AURELIA |
-| Cervical | 13,490 | 52% | 7,015 | 8.5 mo | 71.7 | EMPOWER-Cervical 1 |
-| Endometrial | 68,270 | 15% | 10,241 | 11.4 mo | 62.0 | KEYNOTE-775 |
-| HNSCC | 72,770 | 15% | 10,916 | 5.1 mo | 83.0 | CheckMate 141 |
-| TNBC (Breast) | 48,687 | 40% | 19,475 | 6.7 mo | 77.7 | ASCENT |
-| Neuroendocrine (G3) | 7,960 | 80% | 6,368 | 9.9 mo | 67.0 | Sorbye 2015† |
+| Indication | Annual Incidence | % Eligible | Addressable/yr | mOS 2L+ | Trial Source |
+|-----------|-----------------|------------|---------------|---------|-------------|
+| Pancreatic | 67,530 | 51% | 34,440 | 4.2 mo | NAPOLI-1 |
+| NSCLC (Lung Squamous) | 57,353 | 57% | 32,691 | 6.0 mo | CheckMate 017 |
+| HNSCC | 72,770 | 15% | 10,915 | 5.1 mo | CheckMate 141 |
+| TNBC (Breast) | 48,687 | 40% | 19,474 | 6.7 mo | ASCENT |
+| Gastric/GEJ | 31,510 | 36% | 11,343 | 7.4 mo | RAINBOW |
+| SCLC | 34,412 | 57% | 19,614 | 8.3 mo | RESILIENT |
+| Cervical | 13,490 | 52% | 7,014 | 8.5 mo | EMPOWER-Cervical 1 |
+| NSCLC (Lung Adeno) | 91,764 | 57% | 52,305 | 9.4 mo | CheckMate 057 |
+| Neuroendocrine (G3) | 7,960 | 80% | 6,368 | 9.9 mo | Sorbye 2015† |
+| Endometrial | 68,270 | 15% | 10,240 | 11.4 mo | KEYNOTE-775 |
+| Colorectal | 158,850 | 45% | 71,482 | 12.1 mo | VELOUR |
+| Ovarian | 21,010 | 55% | 11,555 | 13.3 mo | AURELIA |
 
 **†** _Phase II only - small patient sample size, interpret with caution_
 
@@ -597,8 +597,6 @@ Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
 † M2 ONLY — not on ABL Bio CEO TMA slide; scored from CPTAC only  
 ‡ M1 ONLY — no usable CPTAC data; scored from TMA only  
 ⚠ NR = Not Ranked — no expression data from TMA or CPTAC PDC; medical score not computed, excluded from quadrant chart, and commercial scores shown for reference only
-
-### Strategic Recommendation
 
 ### Strategic Recommendation
 
