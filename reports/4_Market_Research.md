@@ -55,12 +55,12 @@ Understanding their targets, payloads, indications, and commercial trajectories 
 | Datopotamab deruxtecan | Datroway | AZ/Daiichi Sankyo | Trop-2 | ~8 | DXd | **Topo-I inhibitor** | 2025 | HR+/HER2- BC | N/A | N/A |
 | Telisotuzumab vedotin | Emrelis | AbbVie | c-Met | 4 | MMAE | Tubulin binder | 2025 | NSCLC (c-Met high) | N/A | N/A |
 ---
-_\* Pfizer does not disclose individual seperate sales for all nine of its hematology-oncology therapies_
+_\* Pfizer does not disclose individual seperate sales for all nine of its hematology-oncology therapies_  
 _† Mylotarg: originally approved 2000, withdrawn 2010, reapproved 2017_  
 _‡ Adcetris global sales are reported by both Pfizer and Takeda ($1.09B & ~$822M in 2024, respectively). Pfizer holds US+Canada rights but US-only not separately disclosed_  
 _¶ Blenrep was withdrawn 2022; 2024 sales negligible (£2M global and negative in US, per GSK Full-Year 2024 Press Release from 5 Feb 2025). Reapproved by FDA 2025 so sales resumed_  
 _§ ADC Therapeutics sells Zynlonta directly only in the US; international sales handled through partners and reported separately. Value obtained from ADC Therapeutics SA 2024 Annual Report_  
-_° Elahere US values obtained from AbbVie Q4 and Full-Year 2024 Financial Results Press Release from 31 Jan 2025_
+_° Elahere US values obtained from AbbVie Q4 and Full-Year 2024 Financial Results Press Release from 31 Jan 2025_  
 
 **Note:** 
 - Cetuximab sarotalocan (Akalux, PMDA Japan) and Disitamab vedotin* (Aidixi, NMPA China) excluded — not FDA approved.
@@ -139,8 +139,8 @@ More aggressive launch trajectory:
 | 2023 | ~$664M† | Pfizer acquired |
 | 2024 | $1.56B | - |
 
-† 2023 US estimate: $479M (9M Seagen Q3 report) + ~$133M (Oct to Dec 14 acquisition est., 9M avg run rate × 2.5 months) + $52M (Pfizer acquired Dec 14)
-_Note: Seagen Q4 earnings press releases is US-only as Seagen held US rights (ex-US rights held by Astellas and reported separately)_
+_† 2023 US estimate: $479M (9M Seagen Q3 report) + ~$133M (Oct to Dec 14 acquisition est., 9M avg run rate × 2.5 months) + $52M (Pfizer acquired Dec 14)_  
+_Note: Seagen Q4 earnings press releases is US-only as Seagen held US rights (ex-US rights held by Astellas and reported separately)_  
 
 ---
 
@@ -157,7 +157,7 @@ More conservative trajectory:
 | 2023 | ~$283M† | Based on Q3 report |
 | 2024 | $477M | AbbVie acquired |
 
-† 9M Immunogen 2023 report was $212.1M but remaining Q4 2023 estimated at $70.7M (9M avg run rate × 3 months). Full year not reported — AbbVie acquired ImmunoGen Feb 2024.
+_† 9M Immunogen 2023 report was $212.1M but remaining Q4 2023 estimated at $70.7M (9M avg run rate × 3 months). Full year not reported; AbbVie acquired ImmunoGen Feb 2024._  
 
 ---
 
