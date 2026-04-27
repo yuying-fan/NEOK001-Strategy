@@ -20,8 +20,8 @@ This project is a data-driven analysis identifying the optimal initial indicatio
 > <u>Advisory note:</u> IP advisory was provided by Stacey Ivanchuk during the ITCS Program.
 >
 
-<br>
-<hr style="border: 2px solid black;">
+---
+---
 
 ## Background
 
@@ -48,8 +48,8 @@ To present a **strategic recommendation** to NEOK Bio senior leadership for  NEO
 > This analysis is focused on the **United States market**, the largest global oncology market and the primary commercialization target for NEOK001 (given NEOK Bio's US-based operations and FDA IND clearance).
 >
 
-<br>
-<hr style="border: 2px solid black;">
+---
+---
 
 ## How to Read This Repo
 **Non-technical readers:** Read reports 1 to 6 in the `reports/` folder.
