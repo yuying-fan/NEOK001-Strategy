@@ -1,0 +1,13 @@
+Indication,ct_search_term,active_adc_ph23,active_adc_all,completed_topo1,direct_active
+NSCLC (Lung Adeno),non-small cell lung cancer,32,55,47,7
+NSCLC (Lung Squamous),lung squamous cell carcinoma,6,17,8,5
+SCLC,small cell lung cancer,41,65,131,13
+Gastric/GEJ,gastric OR gastroesophageal,20,28,88,2
+Colorectal,colorectal cancer,13,29,399,5
+Pancreatic,pancreatic cancer,11,24,121,3
+Ovarian,ovarian cancer,26,40,85,9
+Cervical,cervical cancer,25,41,93,8
+Endometrial,endometrial OR uterine cancer,22,35,35,4
+HNSCC,head and neck cancer,20,33,66,8
+TNBC (Breast),triple negative breast cancer,22,34,7,6
+Neuroendocrine,neuroendocrine tumor OR neuroendocrine carcinoma,7,11,11,6

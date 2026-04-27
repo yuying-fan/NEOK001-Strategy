@@ -88,7 +88,7 @@ Ifinatamab deruxtecan (DS-7300, Daiichi Sankyo/Merck) showed clinical meaningful
 - Is a B7-H3 ADC that uses Topo-I inhibitor payload (an exatecan derivative, DXd)
 - ORR of 48.2% in these patients
 In IDeate-PanTumor02, the previous Phase 1b/2 pan-tumor trial, an ORR of 34% was seen
-- Promising anti-tumour activity was seen in a wange of solid tumors
+- Promising anti-tumour activity was seen in a range of solid tumors
 - Patients were those with advanced treatment-refractory solid tumors, which included SCLC, NSCLC, HNSCC, prostate cancer, endometrial cancer and other solid tumors
 
 ### <u>Target Biology: ROR1 _(Receptor Tyrosine Kinase-like Orphan Receptor 1)_</u>
@@ -116,10 +116,13 @@ CS5001 (created by LigaChem Biosciences + <span style="color: blue;">ABL Bio</sp
 - Antitumor activity in multiple advanced solid tumors and lymphomas
 
 ### <u>Bispecific Structure of NEOK001</u>
+NEOK001 is designed with a **2+2 symmetric structure**: two binding arms for ROR1 and two for B7-H3
+To selectively engage cancer cells co-expressing both antigens. It is conjugated to SYNtecan-E, a linker-payload containing exatecan (Topo-I inhibitor).
+
 ```
-[Anti-ROR1 Arm] ─────┐
-                     ├── Bispecific Antibody ── Linker ── Topo-I Payload
-[Anti-B7-H3 Arm] ────┘
+[Anti-ROR1 Arm] × 2 ─────┐
+                         ├── 2+2 Bispecific ── SYNtecan-E ── Exatecan (Topo-I)
+[Anti-B7-H3 Arm] × 2 ────┘
 ```
 
 **Advantages of a BsADC over monospecific:**  
@@ -149,7 +152,8 @@ NEOK001 uses **SYNtecan-E™**:
 ## 4. NEOK001 Preclinical Efficacy Data
 *Sources: [[1](https://www.youtube.com/watch?v=GpLdrk-Vdzg&list=PLuQQ6w1jBXamvNuFR1t88Dze2QUv8uw22&index=17)],[[2](https://www.neokbio.com/news-2026-jan21)]*
 
-![NEOKBio Presentation Slide](../data/images/background/abl206.png)
+<img src="../data/images/abl206.png" width="700">  
+
 _2025 ABL Bio Presentation Slide_
 
 ### Ovarian Cancer Model
@@ -164,9 +168,26 @@ _2025 ABL Bio Presentation Slide_
 
 ### Preclinical Findings
 _From NEOK Bio's poster abstract for AACR 2026; "Poster 1724: NEOK001: A first-in-class B7-H3xROR1 bispecific ADC demonstrated enhanced efficacy and promising tolerability")_
-- Strong cancer cell killing through dual-targeting with strong bystander killing (for heterogenous solid tumors)
-- Showed broad efficacy across 38 PDX models, with 84% tumor growth inhibition & 53% deep tumor regression in 9 major cancer types
-- Favorable safety profile in GLP toxicology studies (HNSTD: 60 mg/kg), alongside consistent DAR and predictable pharmacokinetics
+- Strong cancer cell killing through dual-targeting with strong bystander
+  killing (for heterogenous solid tumors)
+- In vivo efficacy tested in CDX and PDX models derived from
+  B7-H3 × ROR1 co-expressing cancer cell lines, including **SCLC, NSCLC,
+  and ovarian cancer**
+- Across 37 PDX models: **81% tumor growth inhibition and 54% tumor
+  regression** — outperformed single-target ADC comparators
+  **zilovertamab vedotin (ROR1 monospecific) and I-DXd (ifinatamab
+  deruxtecan, B7-H3 monospecific)**
+- Favorable safety profile in GLP toxicology studies:
+  **HNSTD of 60 mg/kg in non-human primates (NHP)**
+- Drug toxicity consistent with exatecan payload class — no unexpected
+  off-target signals
+- **No pulmonary toxicity observed** — specifically no interstitial lung
+  disease (ILD), a known concern for other Topo-I ADCs (e.g. Enhertu
+  carries a boxed warning for ILD). The stable Topo-I linker-payload
+  design is expected to reduce pulmonary toxicity relative to existing
+  ADCs in this class
+- Consistent DAR and predictable pharmacokinetics
+- Based on non-clinical GLP toxicity studies, they expect a very wide therapeutic window
 
 <br>
 <hr style="border: 2px solid black;">

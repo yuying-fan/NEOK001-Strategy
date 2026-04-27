@@ -1,5 +1,4 @@
 .DS_Store
 
-# Raw data (do not commit)
-data/raw/
+# Raw data (do not commit): data/raw/ (commented out; used curated set from Lens and put disclaimer in README)
 sources/

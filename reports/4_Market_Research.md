@@ -59,7 +59,7 @@ _\* Pfizer does not disclose individual seperate sales for all nine of its hemat
 _† Mylotarg: originally approved 2000, withdrawn 2010, reapproved 2017_  
 _‡ Adcetris global sales are reported by both Pfizer and Takeda ($1.09B & ~$822M in 2024, respectively). Pfizer holds US+Canada rights but US-only not separately disclosed_  
 _¶ Blenrep was withdrawn 2022; 2024 sales negligible (£2M global and negative in US, per GSK Full-Year 2024 Press Release from 5 Feb 2025). Reapproved by FDA 2025 so sales resumed_  
-_§ ADC Therapeutics sells Zynlonta directly only in the US; international sales handled through partners and reported separately. Value obtained obtained from ADC Therapeutics SA 2024 Annual Report_  
+_§ ADC Therapeutics sells Zynlonta directly only in the US; international sales handled through partners and reported separately. Value obtained from ADC Therapeutics SA 2024 Annual Report_  
 _° Elahere US values obtained from AbbVie Q4 and Full-Year 2024 Financial Results Press Release from 31 Jan 2025_
 
 **Note:** 
@@ -168,31 +168,33 @@ More conservative trajectory:
 | Payload class | Topo-I (SN-38) | MMAE | DM4 | Topo-I (exatecan) |
 | Prior ADC in indication | None | None | None | None |
 | Line of therapy | 2L+ | 2L+ | 3L+ | 2L+ |
-| Companion dx required | No | No | Yes (FRα) | No (estimate) |
+| Companion dx required | No | No | Yes (FRα) | **Likely if co-expression correlates with response** |
 | 2024 US sales | $877M | $1.56B | $477M | — |
-| Role for NEOK001 | Base case | Upper bound | Lower bound | — |
+| Role for NEOK001 | Base case (quantitative anchor) | Upper bound (no CDx) | Lower bound (CDx required) | — |
 
 ---
 
 ### Selection for Market Sizing
-Of the three benchmarks, Trodelvy will be selected as the quantitative anchor for NEOK001's revenue projections in this Section 4 and in `4_market_research.iynb`  
-- Is the closest structural analogue (same Topo-I payload class)
-- First ADC in indication
-- No companion diagnostic
-- 2L+ positioning
 
-So Trodelvy's US launch trajectory will next be scaled to the NEOK001 PDAC
-addressable pool and WAC to generate revenue estimates
+Trodelvy is retained as the **quantitative anchor** for revenue
+projections — same Topo-I payload class, first ADC in indication,
+2L+ positioning, no prior approved ADC.
 
-_Padcev and Elahere inform the qualitative context and variables for deciding on a benchmark, but they are not used as quantitative scalers_
+However, Trodelvy's penetration was achieved without a patient
+screening step and likely **overstates** NEOK001's achievable
+penetration if a companion diagnostic is ultimately required.
+Elahere provides the CDx-adjusted reference — its launch trajectory
+under a required FRα companion diagnostic is the most relevant
+commercial precedent if NEOK001 requires dual ROR1/B7-H3 screening.
+
+_Padcev informs the upper bound trajectory (no CDx, strong Phase 3
+data, rapid 1L expansion) but is not used as a quantitative scaler._
 
 <br>
 <hr style="border: 2px solid black;">
 
 ## 4. Dosing & Annual WAC - NEOK001 Assumption
-We already have estimates on addressable patient population (mTNBC for Trodelvy; mPDAC for NEOK001) from Report 3 (& `3_indication_scoring.ipynb`). However, those were  The missing value would be the price adjustments, so the WAC for Trodelvy and WAC (proposed) for NEOK001
-
-The indication scoring in Report 3 (& `3_indication_scoring.ipynb`) used the **full 1L metastatic pool** (incidence × % metastatic) as the addressable patient estimate - representing  the long-term commercial opportunity assuming eventual label expansion, consistent with ADC class precedent (e.g. Enhertu, Trodelvy, Padcev; all 
+We already have estimates on addressable patient population (mTNBC for Trodelvy; mPDAC for NEOK001) from Report 3 (& `3_indication_scoring.ipynb`). However, the indication scoring in Report 3 (& `3_indication_scoring.ipynb`) used the **full 1L metastatic pool** (incidence × % metastatic) as the addressable patient estimate - representing  the long-term commercial opportunity assuming eventual label expansion, consistent with ADC class precedent (e.g. Enhertu, Trodelvy, Padcev; all 
 expanded from later to earlier lines post-approval).
 
 For revenue projections in this section, we'll use a more conservative **2L+ SAM** as it's the realistic near-term entry point for NEOK001 as a first-in-human Phase 1 asset entering a setting where patients have already received at least one prior line of therapy. This reflects where NEOK001 will most likely receive its initial approval, before any label expansion data exists.
@@ -268,10 +270,9 @@ Assumed: single infusion Q3W (common ADC schedule)
 ## 5. Revenue Trajectory
 *Trodelvy-anchored 5-year post-approval projection*
 
-![NEOK001 Revenue Projection](../data/images/02_neok001_revenue_projection.png)
+<img src="../data/images/02_neok001_revenue_projection.png" width="900">  
 
 *NEOK001 projected US sales (2L+ SAM, Years 0–4 post-approval), scaled from Trodelvy TNBC trajectory adjusted for PDAC pool size and WAC difference. ±25% range reflects PDAC-specific clinical and market uncertainties.*
-
 
 <br>
 <hr style="border: 2px solid black;">
@@ -301,21 +302,25 @@ Two SAM estimates reflecting near-term 2L+ entry and long-term 1L expansion:
 | **SAM - near-term (2L+)** | **~$3.2B** (15,842 pts × $200K) |
 | **SAM - long-term (1L expansion)** | **~$6.9B** (34,440 pts × $200K) |
 
-> Near-term SAM applies a biomarker prevalence discount (92% ROR1 detected
-> in CPTAC PDAC), patients without detectable ROR1 are unlikely to benefit
-> from NEOK001's bispecific mechanism.  
-> Long-term SAM assumes 1L label expansion consistent with ADC class precedent (Enhertu, Trodelvy, Padcev) and no biomarker restriction at 1L.
+> Near-term SAM applies a ROR1 biomarker prevalence discount (92%
+> CPTAC detection in PDAC). Note this does not model co-expression
+> of both ROR1 and B7-H3 simultaneously — true addressable patients
+> require tumor expression of both targets. For PDAC specifically,
+> the co-expression impact is minimal (ROR1 92% × B7-H3 100% ≈ 92%
+> under independence assumption). A formal companion diagnostic
+> selecting dual-positive patients would further refine this estimate.
+> See Limitation note in Section 7.
 
 ---
 
 ### SOM — Serviceable Obtainable Market
 Realistic peak market share based on near-term 2L+ SAM (~$3.2B), scaled from Trodelvy benchmark penetration:
 
-| Scenario | Market Share | Patients/yr | Peak Annual Revenue |
-|----------|-------------|------------|-------------------|
-| Conservative | 5–8% of SAM | ~800–1,300 | ~$160M–$250M |
-| Base case (Trodelvy-paced) | 10–15% of SAM | ~1,600–2,400 | ~$320M–$480M |
-| Upper bound | 18–25% of SAM | ~2,900–4,000 | ~$570M–$790M |
+| Scenario | Market Share | Patients/yr | Peak Annual Revenue | Reference |
+|----------|-------------|------------|-------------------|-----------|
+| Conservative | 5–8% of SAM | ~800–1,300 | ~$160M–$250M | Elahere-paced (CDx required) |
+| Base case | 10–15% of SAM | ~1,600–2,400 | ~$320M–$480M | Trodelvy-paced, ~20% CDx discount |
+| Upper bound | 18–25% of SAM | ~2,900–4,000 | ~$570M–$790M | Trodelvy-paced, no CDx |
 
 **Base case rationale:**  
 Trodelvy achieved ~12% SAM penetration in TNBC by Year 4 post-approval
@@ -334,3 +339,50 @@ Trodelvy achieved ~12% SAM penetration in TNBC by Year 4 post-approval
 | SOM - conservative | 5–8% of near-term SAM | ~800–1,300 | $200K | ~$160M–$250M |
 | SOM - base case | 10–15% of near-term SAM | ~1,600–2,400 | $200K | ~$320M–$480M |
 | SOM - upper bound | 18–25% of near-term SAM | ~2,900–4,000 | $200K | ~$570M–$790M |
+
+<br>
+<hr style="border: 2px solid black;">
+
+## 7. Limitations
+
+**1. Co-expression not modeled in SAM**
+The near-term SAM applies a single-target biomarker discount (ROR1
+92% CPTAC detection) but does not model co-expression of both ROR1
+and B7-H3 simultaneously. NEOK001's bispecific mechanism requires
+tumor cells to co-express both targets for full bispecific engagement.
+Per-patient co-expression data would require multiplex IHC or
+single-cell proteomics — not available from current CPTAC or TMA
+data. For PDAC the impact is minimal given near-universal B7-H3
+detection (100% CPTAC), but for other indications with lower dual
+detection rates the SAM overstatement could be substantial.
+
+**2. Companion diagnostic uncertainty**
+Whether NEOK001 will require a CDx is unknown until Phase 1/2
+response data is available. ROR1 and B7-H3 are frequently
+co-expressed in solid tumors — if clinical response correlates
+strongly with co-expression level, FDA will likely require a CDx
+to select dual-positive patients, consistent with Elahere's
+FRα IHC requirement. This would reduce effective SAM and slow
+physician adoption relative to the Trodelvy-anchored base case.
+Preclinical tolerability data is encouraging — HNSTD of 60 mg/kg
+in NHP (AACR 2026) suggests a wide therapeutic window that may
+reduce CDx urgency if efficacy is achievable at lower doses in
+broader populations.
+
+**3. WAC assumption is speculative**
+NEOK001's dosing schedule is not yet established. The $200K/yr
+WAC assumption reflects a single Q3W infusion — actual pricing
+will depend on Phase 1/2 data, competitive landscape at approval,
+and payer negotiations.
+
+**4. Trodelvy penetration back-calculation**
+The ~12% SAM penetration estimate for Trodelvy was derived by
+dividing Year 4 US sales ($877M) by annual WAC ($364K) to estimate
+patients treated (~2,410), then dividing by the addressable pool
+(~19,475). This assumes all revenue came from the TNBC 2L+
+indication — Trodelvy has since expanded to HR+/HER2- MBC which
+may inflate the penetration estimate for the original TNBC 2L+
+population specifically.
+
+<br>
+<hr style="border: 2px solid black;">

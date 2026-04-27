@@ -1,0 +1,13 @@
+Indication,CPTAC_study,ROR1_log2,ROR1_n,ROR1_pct_det,B7H3_log2,B7H3_n,B7H3_pct_det
+NSCLC (Lung Adeno),CPTAC LUAD Confirmatory Study - Proteome,0.002,270.0,100.0,-0.006,270.0,100.0
+NSCLC (Lung Squamous),CPTAC LSCC Discovery Study - Proteome,0.2,190.0,86.4,-0.136,220.0,100.0
+Gastric/GEJ,CPTAC STAD Study - Proteome,0.153,187.0,84.6,-0.207,221.0,100.0
+Pancreatic,CPTAC PDA Discovery Study - Proteome,0.08,212.0,92.2,-0.124,230.0,100.0
+Ovarian,PTRC HGSOC FFPE Discovery - Proteome,-0.007,190.0,90.5,0.005,210.0,100.0
+Endometrial,CPTAC UCEC Confirmatory Study - Proteome,-0.167,158.0,100.0,0.181,158.0,100.0
+HNSCC,CPTAC HNSCC Discovery Study - Proteome,-0.035,59.0,29.6,-0.243,199.0,100.0
+TNBC (Breast),PTRC TNBC - Proteome,,,,-0.026,30.0,100.0
+SCLC,Liu et al. 2024 (external),,,,-0.0486,112.0,
+Colorectal,,,,,,,
+Cervical,,,,,,,
+Neuroendocrine,,,,,,,

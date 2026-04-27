@@ -1,0 +1,13 @@
+Indication,US_annual_incidence,pct_eligible,metastatic_OS_months,addressable_patients_yr,unmet_need_score,neok_priority
+NSCLC (Lung Adeno),91764,57,9.4,52305,9.4,True
+NSCLC (Lung Squamous),57353,57,6.0,32691,6.0,True
+SCLC,34412,57,8.3,19614,8.3,True
+Gastric/GEJ,31510,36,7.4,11343,7.4,True
+Colorectal,158850,45,12.1,71482,12.1,True
+Pancreatic,67530,51,4.2,34440,4.2,True
+Ovarian,21010,55,13.3,11555,13.3,True
+Cervical,13490,52,8.5,7014,8.5,True
+Endometrial,68270,15,11.4,10240,11.4,True
+HNSCC,72770,15,5.1,10915,5.1,False
+TNBC (Breast),48687,40,6.7,19474,6.7,False
+Neuroendocrine,7960,80,9.9,6368,9.9,False

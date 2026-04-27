@@ -52,7 +52,7 @@ For each indication, metrics for ROR1 and B7-H3 protein expression were obtained
 ---
 _CPTAC = Clinical Proteomic Tumor Analysis Consortium_
 
-### <u>Method 1 (M1) — TMA IHC Primary</u>
+#### <u>Method 1 (M1) — TMA IHC Primary</u>
 *Source: [ABL Bio CEO slide, 2025 (tissue microarray IHC data](https://youtu.be/GpLdrk-Vdzg?list=PLuQQ6w1jBXamvNuFR1t88Dze2QUv8uw22&t=62))*
 
 **Tissue Microarray Immunohistochemistry (TMA IHC)** is the gold standard method for assessing protein expression for ADC target selection
@@ -61,7 +61,8 @@ _CPTAC = Clinical Proteomic Tumor Analysis Consortium_
 - **Immunohistochemistry (IHC):** Antibody staining that detects a specific protein in tissue sections; visualized under microscope as colored signal
 - **H-score (0-300):** Standardized quantification: `H-score = staining intensity (0-3) × % positive cells`
 
-![NEOKBio Presentation TMA IHC](../data/images/background/TMA_IHC.png)
+<img src="../data/images/TMA_IHC.png" width="800">  
+
 _TMA IHC Data seen on bottom left_
 
 ABL Bio CEO Sang Hoon Lee presented these TMA IHC bar charts for ROR1 and B7-H3 protein expression across 10 cancer types in their 2025 investor [presentation](https://youtu.be/GpLdrk-Vdzg?list=PLuQQ6w1jBXamvNuFR1t88Dze2QUv8uw22&t=62).
@@ -120,7 +121,7 @@ _† based on "Lung cancer" labeled bar in the TMA IHC slide_
 
 ---
 
-### <u>Method 2 (M2) — CPTAC Primary</u>
+#### <u>Method 2 (M2) - CPTAC Primary</u>
 *Source: PDC API (Clinical Proteomic Tumor Analysis Consortium, mass spectrometry protein abundance)*
 
 The **Clinical Proteomic Tumor Analysis Consortium (CPTAC)** is an NCI-funded
@@ -166,6 +167,31 @@ Accessed via PDC GraphQL API (pdc.cancer.gov); no authentication required
 >
 > The Liu et al. (Cell 2024) SCLC value for CD276 (log2FC = -0.049 vs NAT, p = 0.490) is a T/NAT metric and is **not directly comparable** to the other CPTAC log2 ratios in this table. It is included for biological context, specifically it confirmed that B7H3 is not tumor-enriched in SCLC relative to normal lung tissue in this study, which is relevant to the safety and targeting rationale.
 
+> **Note on co-expression and bispecific mechanism:**
+> ROR1 and B7-H3 are scored independently in this framework —
+> each contributing 20% to the medical score. However, NEOK001's
+> bispecific mechanism is designed to engage both targets
+> simultaneously: B7-H3 provides broad tumor coverage while ROR1
+> provides selectivity, with the dual-target requirement intended
+> to reduce on-target off-tumor toxicity to normal tissues that
+> express only one target.
+>
+> ROR1 and B7-H3 are frequently co-expressed in solid tumors,
+> supporting this bispecific rationale. However, true co-expression
+> prevalence cannot be computed from the current data — CPTAC and
+> TMA both provide per-protein detection rates, not paired
+> per-patient measurements. Per-patient co-expression would require
+> multiplex IHC or single-cell proteomics with both antibodies on
+> the same tissue section.
+>
+> Indications where one target is absent or very low should be
+> interpreted with particular caution — independent scoring may
+> overstate their true medical score:
+> - **TNBC** — ROR1 proteomically absent across all PDC studies;
+>   bispecific engagement uncertain regardless of B7-H3 signal
+> - **HNSCC** — ROR1 CPTAC detection only 29.6% (n=59);
+>   co-expression prevalence likely lower than independent scores suggest
+
 #### <u>Data Availability Limitations</u>
 
 **Colorectal**  
@@ -205,7 +231,7 @@ No CPTAC study in PDC. External validation was done via Liu et al. (Cell, 2024; 
 
 ---
 
-### <u> Expression Data - Combining Results of Method 1 & Method 2</u>
+#### <u> Expression Data - Combining Results of Method 1 & Method 2</u>
 
 **Moderate Confidence Flag:**
 - Both methods agree (rank delta ≤ 1) → **High confidence**
@@ -250,14 +276,11 @@ format, incompatible with TMT log2 ratio). Cervical: KU CCA Discovery
 Study returns null matrix. Absence of data ≠ absence of expression,
 both should be revisited if compatible proteomics data becomes available.*
 
-<br>
-<hr style="border: 2px solid black;">
+---
 
 ### 3.2 US Epidemiology
 
-All values reflect the **2L+ metastatic setting**, the most likely treatment context
-NEOK001 would enter as an ADC, with the long-term goal of label expansion
-into earlier lines. ADCs typically launch in 2L+ but will try to expand to 1L as Phase 3 data matures. 
+All values reflect the **2L+ metastatic setting**, the most likely treatment context NEOK001 would enter as an ADC, with the long-term goal of label expansion into earlier lines. ADCs typically launch in 2L+ but will try to expand to 1L as Phase 3 data matures. 
 
 For unmet need scoring, the <span style="color: blue;">median OS values from control arms of Phase 3 trials in the 2L+ setting</span> will be used. See Section 3 of [notebooks/3_indication_scoring.ipynb](../notebooks/3_indication_scoring.ipynb) for full citations.
 
@@ -290,10 +313,7 @@ For unmet need scoring, the <span style="color: blue;">median OS values from con
 <u>**Note on addressable patient pool:**</u>  
 `addressable_patients_yr = annual_incidence × % metastatic`
 
-Represents the **1L metastatic pool** — patients who present with or
-develop metastatic disease and are eligible to begin systemic therapy.
-This is the long-term addressable market for NEOK001 assuming eventual
-label expansion to 1L (consistent with ADC class precedent).
+Represents the **1L metastatic pool** — patients who present with or develop metastatic disease and are eligible to begin systemic therapy. This is the long-term addressable market for NEOK001 assuming eventual label expansion to 1L (consistent with ADC class precedent).
 
 <u>**Notes on % metastatic:**</u>  
 Full citation details and source methodology documented in [`notebooks/3_indication_scoring.ipynb`](../notebooks/3_indication_scoring.ipynb)  
@@ -309,10 +329,9 @@ For fast-progressing cancers (NSCLC, SCLC, Gastric, Pancreatic, Ovarian, Cervica
 
 For slower cancers (Colorectal, Endometrial, TNBC, HNSCC), % diagnosed metastatic underestimates true pool as many are diagnosed early but later progress. So rather than using % metastatic at diagnosis as proxy for addressable patient pool, consulted additional literature for these indications.
 
-<br>
-<hr style="border: 2px solid black;">
+---
 
-### 3.3 — Competitive Landscape (ClinicalTrials.gov)
+### 3.3 Competitive Landscape (ClinicalTrials.gov)
 ClinicalTrials.gov is the US National Library of Medicine's public registry of clinical studies (500,000+ studies worldwide, updated daily)
 - Trial counts pulled from ClinicalTrials.gov v2 REST API, on April 2026
 - v2 REST API (introduced 2023) provides structured access with no authentication required.
@@ -327,8 +346,7 @@ Trial counts serve as quantitative proxies for three strategic factors:
 | Direct competition | Active ROR1 or B7H3 (CD276) trials | How many direct mechanism competitors? |
 
 > #### Phase 2/3 Focus
-> We focus on **active Phase 2/3 ADC trials** as the primary competitive
-> intensity metric because:
+> We focus on **active Phase 2/3 ADC trials** as the primary competitive intensity metric because:
 > - Phase 1 trials are early-stage and not immediately competitive
 > - Phase 2/3 represents near-term market entrants (3-7 year horizon); A timeframe more relevant for NEOK001's Phase 1 decision
 > 
@@ -363,7 +381,7 @@ Trial counts serve as quantitative proxies for three strategic factors:
 <br>
 <hr style="border: 2px solid black;">
 
-## Section 4 — Scoring Model
+## 4. Scoring Model
 
 ### Framework
 
@@ -378,8 +396,7 @@ Trial counts serve as quantitative proxies for three strategic factors:
 
 - Equal 20% weight for both targets — NEOK001 requires both ROR1 and B7H3 for its bispecific mechanism
 - Unmet need highest weight (35%) — directly drives clinical and regulatory urgency
-- Topo-I (25%) — payload confidence
-- Topo-I uses log1p to prevent colorectal (399 trials) from dominating the normalization range
+- Topo-I (25%) — payload confidence; uses log1p to prevent colorectal (399 trials) from dominating the normalization range
 
 **2) Commercial Score (50% of overall):**
 
@@ -399,7 +416,7 @@ Trial counts serve as quantitative proxies for three strategic factors:
 <br>
 <hr style="border: 2px solid black;">
 
-## Section 5 — Results
+## 5. Results
 
 **Ranking note:** 
 Of 12 indications evaluated, 10 are ranked using available protein expression data
@@ -459,14 +476,14 @@ Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
   commercial scores shown for reference only
 
 ### Quadrant Visualization
+<img src="../data/images/01_indication_quadrant_final.png" width="900">  
 
-![NEOK001 Indication Scoring Quadrant](../data/images/01_indication_quadrant_final.png)
 <span style="color: blue;">Long-term addressable market (1L metastatic US patient pool) is used, as ADCs typically launch 2L+ with goal of expanding to 1L as data matures</span>
 
 <br>
 <hr style="border: 2px solid black;">
 
-## Section 6 — Final Summary and Strategic Recommendation
+## 6. Final Summary and Strategic Recommendation
 
 ### Scoring Summary
 
@@ -511,7 +528,7 @@ Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
 
 #### Mid Tier (Avg Overall 40–60)
 
-**#3 NSCLC (Lung Adeno) — Lower Priority** `MODERATE confidence`
+**#3 NSCLC (Lung Adeno) — Lower Priority** `HIGH confidence`
 - Largest addressable patient pool but it is a highly competitive space (32 active Ph2/3 ADC trials)
 - Both ROR1 and B7H3 near neutral by CPTAC (+0.002 & -0.006); least differentiated expression of all indications
 - HIGH confidence: M1=#3, M2=#4 — rank shift likely driven by expression method difference
@@ -551,7 +568,7 @@ Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
 - M2 ONLY; not on ABL Bio TMA IHC slide
 
 **#9 Ovarian — Lower Priority** `HIGH confidence`
-- B7H3 confirmed (85% TMA positive, CPTAC +0.005) but ROR1 low 60% TMA positive, CPTAC -0.007)
+- B7H3 confirmed (85% TMA positive, CPTAC +0.005) but ROR1 low (60% TMA positive, CPTAC -0.007)
 - 26 active Ph2/3 ADC trials — crowded competitive landscape
 - HIGH confidence: M1=#7, M2=#7
 
@@ -561,7 +578,7 @@ Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
   - High unmet need (mOS 8.3 months)
   - Topo-I strongly validated (131 completed trials, topotecan approved SOC)
 - BUT worst commercial score (15.3) - 41 Ph2/3 ADC trials, 13 direct competitors
-- External literature discrepency (Liu et al. Cell 2024): ROR1 absent from SCLC proteome; CD27 (B7-H3) not found tumor-enriched vs NAT (log2FC=-0.048, p=0.490)
+- External literature discrepency (Liu et al. Cell 2024): ROR1 absent from SCLC proteome; CD276 (B7-H3) not found tumor-enriched vs NAT (log2FC=-0.048, p=0.490)
 
 
 ---
@@ -575,28 +592,6 @@ Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
 - Literature supports B7H3 expression in cervical cancer but no quantitative expression data from TMA or CPTAC available
 - Small addressable pool (~7K/yr) limits commercial case regardless
 
-
-### Final Rankings
-
-| Rank | Indication | Avg Overall | M1 Med | M2 Med | Comm | Confidence |
-|------|-----------|------------|--------|--------|------|------------|
-| #1 | Pancreatic†* | 70.6 | N/A | 71.5 | 69.7 | M2 ONLY |
-| #2 | NSCLC (Lung Squamous)* | 63.9 | 60.3 | 53.9 | 70.7 | HIGH |
-| #3 | NSCLC (Lung Adeno)* | 50.9 | 58.0 | 46.8 | 49.4 | HIGH |
-| #4 | HNSCC | 50.6 | 78.3 | 52.3 | 35.9 | MODERATE |
-| #5 | TNBC (Breast)‡ | 50.4 | 58.3 | N/A | 42.5 | M1 ONLY |
-| #6 | Gastric/GEJ* | 47.5 | 38.8 | 57.2 | 47.0 | MODERATE |
-| #7 | Neuroendocrine‡ | 39.2 | 26.8 | N/A | 51.6 | M1 ONLY |
-| #8 | Endometrial†* | 38.6 | N/A | 36.9 | 40.4 | M2 ONLY |
-| #9 | Ovarian* | 30.9 | 32.7 | 35.6 | 27.6 | HIGH |
-| #10 | SCLC‡* | 29.1 | 50.1 | N/A | 8.1 | M1 ONLY |
-| ⚠ NR | Colorectal* | — | — | — | 86.5 | — |
-| ⚠ NR | Cervical* | — | — | — | 27.8 | — |
-
-\* NEOK Bio CEO priority indication (thoracic / gastrointestinal / gynecological)  
-† M2 ONLY — not on ABL Bio CEO TMA slide; scored from CPTAC only  
-‡ M1 ONLY — no usable CPTAC data; scored from TMA only  
-⚠ NR = Not Ranked — no expression data from TMA or CPTAC PDC; medical score not computed, excluded from quadrant chart, and commercial scores shown for reference only
 
 ### Strategic Recommendation
 
@@ -642,7 +637,7 @@ Despite having the highest targetable B7H3 of all 12 indications (33% H-score >1
 <br>
 <hr style="border: 2px solid black;">
 
-## Note on Limitations
+## 6. Limitations
 
 1. **TMA data from visual estimation of CEO slide bars - not raw data** - H-score bin splits carry uncertainty; total % positive is more reliable.
 
@@ -658,3 +653,8 @@ Despite having the highest targetable B7H3 of all 12 indications (33% H-score >1
 
 7. **Trial counts reflect ClinicalTrials.gov as of April 2026** - Competitive landscape evolves rapidly; re-query before any strategic decisions
 
+8. **Co-expression not modeled in expression scoring**
+ROR1 and B7-H3 are scored independently and averaged for the medical expression component. NEOK001's bispecific mechanism requires tumor co-expression of both targets — a cell expressing only one target may not support full bispecific engagement. Per-patient co-expression data would require multiplex IHC or single-cell proteomics with both antibodies on the same tissue section, which is not available in TMA or CPTAC PDC for these indications. Independent scoring may overstate the medical score for indications where one target is absent or very low (TNBC, HNSCC). A companion diagnostic selecting for dual ROR1/B7-H3 positivity may ultimately be required - particularly if Phase 1 clinical response correlates strongly with co-expression level.
+
+<br>
+<hr style="border: 2px solid black;">
