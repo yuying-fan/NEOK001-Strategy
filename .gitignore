@@ -2,3 +2,4 @@
 
 # Raw data (do not commit): data/raw/ (commented out; used curated set from Lens and put disclaimer in README)
 sources/
+data/raw/US-enforced-patents.jsonl

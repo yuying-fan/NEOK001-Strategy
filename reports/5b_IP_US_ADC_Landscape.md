@@ -17,7 +17,7 @@ This is done through:
 
 ## 2. File Prep - US Jurisdiction
 
-I moved onto the `US-enforced-patents.jsonl` file, which focused on the US patent records
+I moved onto the `US-enforced-patents.jsonl` file, which focused on the US patent records 
 - This has also already been narrowed down to ADC Oncology related by specifying the CDCs in The Lens search
   - Added to the search query mentioned in [5a_IP_Global_ADC_Landscape](5a_IP_Global_ADC_Landscape.md), the additional query term of: `AND jurisdiction: US`
 - Results in 5,783 Patent Records; with 2,331 Simple Families and 2,265 Extended Families
