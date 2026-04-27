@@ -18,7 +18,7 @@ These values are then plotted on a 2×2 prioritization matrix and an overall sco
 <hr style="border: 2px solid black;">
 
 ## 2. Indication Candidates
-This analysis will evaluate **12 indications** across Neok Bio CEO's stated intial focus on **thoracic, gastrointestinal and gynecological cancers** [[Source](https://www.biopharmadive.com/news/neok-bio-bispecific-adc-biotech-startup-launch-abl/804378/)], as well as expansion candidates that were mentioned in NEOK001's TMA IHC data [during a 2025 presentation by ABL Bio's CEO, ([Source](https://youtu.be/GpLdrk-Vdzg?list=PLuQQ6w1jBXamvNuFR1t88Dze2QUv8uw22&t=62)])
+This analysis will evaluate **12 indications** across Neok Bio CEO's stated intial focus on **thoracic, gastrointestinal and gynecological cancers** ([Source](https://www.biopharmadive.com/news/neok-bio-bispecific-adc-biotech-startup-launch-abl/804378/)), as well as expansion candidates that were mentioned in NEOK001's TMA IHC data [during a 2025 presentation by ABL Bio's CEO, ([Source](https://youtu.be/GpLdrk-Vdzg?list=PLuQQ6w1jBXamvNuFR1t88Dze2QUv8uw22&t=62))]
 
 
 <u>Thus these were the 12 candidate indications found by looking at these criteria:</u>
@@ -155,10 +155,10 @@ Accessed via PDC GraphQL API (pdc.cancer.gov); no authentication required
 | Cervical | N/A | — | — | N/A | — | — | Null matrix |
 | Neuroendocrine | N/A | — | — | N/A | — | — | Null matrix |
 
-**‡** _ROR1 genuinely absent from ALL TNBC proteomics studies in PDC (8,844 proteins quantified) and from SCLC proteome study by Liu et al. Cell 2024. It could be below detection limit, biologically meaningful absence_
-**§** _Liu et al. Table S3A reports summary statistics only, per-sample detection rate not available_
+**‡** _ROR1 genuinely absent from ALL TNBC proteomics studies in PDC (8,844 proteins quantified) and from SCLC proteome study by Liu et al. Cell 2024. It could be below detection limit, biologically meaningful absence_  
+**§** _Liu et al. Table S3A reports summary statistics only, per-sample detection rate not available_  
 
-> **Note on expression metric:**  
+> **<u>Note on expression metric:</u>**  
 > CPTAC log2 values reflect protein abundance relative to a study-specific pooled reference sample; a mix of multiple tumor types used as a normalization anchor across all samples in that study.
 > A positive value indicates higher abundance than the reference pool average; a negative value indicates lower.  
 > This metric would help support **cross-indication comparison** (which tumor type expresses more ROR1 &/or B7H3 relative to other cancer types) and is appropriate for ADC indication prioritization where the goal is identifying which cancer type presents the highest target density.  
@@ -167,7 +167,7 @@ Accessed via PDC GraphQL API (pdc.cancer.gov); no authentication required
 >
 > The Liu et al. (Cell 2024) SCLC value for CD276 (log2FC = -0.049 vs NAT, p = 0.490) is a T/NAT metric and is **not directly comparable** to the other CPTAC log2 ratios in this table. It is included for biological context, specifically it confirmed that B7H3 is not tumor-enriched in SCLC relative to normal lung tissue in this study, which is relevant to the safety and targeting rationale.
 
-> **Note on co-expression and bispecific mechanism:**
+> **<u>Note on co-expression and bispecific mechanism:</u>**  
 > ROR1 and B7-H3 are scored independently in this framework —
 > each contributing 20% to the medical score. However, NEOK001's
 > bispecific mechanism is designed to engage both targets
@@ -310,24 +310,24 @@ For unmet need scoring, the <span style="color: blue;">median OS values from con
 
 <br>
 
-<u>**Note on addressable patient pool:**</u>  
-`addressable_patients_yr = annual_incidence × % metastatic`
+> **<u>Note on addressable patient pool:</u>**  
+> `addressable_patients_yr = annual_incidence × % metastatic`
+> 
+> Represents the **1L metastatic pool** — patients who present with or develop metastatic disease and are eligible to begin systemic therapy. This is the long-term addressable market for NEOK001 assuming eventual label expansion to 1L (consistent with ADC class precedent).
+ 
+> **<u>Notes on % metastatic:</u>**  
+> Full citation details and source methodology documented in [`notebooks/3_indication_scoring.ipynb`](../notebooks/3_indication_scoring.ipynb)  
+> - NSCLC/SCLC: 57% diagnosed metastatic (Duma et al. PMC8063897)
+> - Colorectal: 45% = 20% at dx + 25% later develop metastases (Bekaii-Saab et al. JAMA 2021, PMID 33591350)
+> - TNBC: 40% eventually develop metastases (Poorvu et al. Cancers 2025)
+> - Endometrial: 15% recurrence/metastasis rate (Song et al. PMC9438970)
+> - Neuroendocrine G3: >80% present with metastatic disease (Pavlakis et al. Sci Reports 2017)
+> - All others: from SEER % distant at diagnosis (seer.cancer.gov/statfacts, 2025)
 
-Represents the **1L metastatic pool** — patients who present with or develop metastatic disease and are eligible to begin systemic therapy. This is the long-term addressable market for NEOK001 assuming eventual label expansion to 1L (consistent with ADC class precedent).
-
-<u>**Notes on % metastatic:**</u>  
-Full citation details and source methodology documented in [`notebooks/3_indication_scoring.ipynb`](../notebooks/3_indication_scoring.ipynb)  
-- NSCLC/SCLC: 57% diagnosed metastatic (Duma et al. PMC8063897)
-- Colorectal: 45% = 20% at dx + 25% later develop metastases (Bekaii-Saab et al. JAMA 2021, PMID 33591350)
-- TNBC: 40% eventually develop metastases (Poorvu et al. Cancers 2025)
-- Endometrial: 15% recurrence/metastasis rate (Song et al. PMC9438970)
-- Neuroendocrine G3: >80% present with metastatic disease (Pavlakis et al. Sci Reports 2017)
-- All others: from SEER % distant at diagnosis (seer.cancer.gov/statfacts, 2025)
-
-<u>**Note on fast vs slow-progressing cancers:**</u>  
-For fast-progressing cancers (NSCLC, SCLC, Gastric, Pancreatic, Ovarian, Cervical), % diagnosed metastatic closely reflects true eligible pool so is used to estimate patient pool
-
-For slower cancers (Colorectal, Endometrial, TNBC, HNSCC), % diagnosed metastatic underestimates true pool as many are diagnosed early but later progress. So rather than using % metastatic at diagnosis as proxy for addressable patient pool, consulted additional literature for these indications.
+> **<u>Note on fast vs slow-progressing cancers:</u>**  
+> For fast-progressing cancers (NSCLC, SCLC, Gastric, Pancreatic, Ovarian, Cervical), % diagnosed metastatic closely reflects true eligible pool so is used to estimate patient pool
+> 
+> For slower cancers (Colorectal, Endometrial, TNBC, HNSCC), % diagnosed metastatic underestimates true pool as many are diagnosed early but later progress. So rather than using % metastatic at diagnosis as proxy for addressable patient pool, consulted additional literature for these indications.
 
 ---
 
@@ -439,11 +439,10 @@ Of 12 indications evaluated, 10 are ranked using available protein expression da
 | ⚠ NR | Colorectal* | — | — | — | — | — | 86.5 | — | — |
 | ⚠ NR | Cervical* | — | — | — | — | — | 27.8 | — | — |
 
-\* NEOK Bio CEO priority indication (thoracic / gastrointestinal / gynecological)
-† M2 ONLY - not on ABL Bio CEO TMA slide; scored from CPTAC only
-‡ M1 ONLY - no usable CPTAC data; scored from TMA only
-⚠ NR = Not Ranked - no expression data from TMA or CPTAC PDC;
-  medical score not computed; excluded from quadrant chart
+_\* NEOK Bio CEO priority indication (thoracic / gastrointestinal / gynecological)_  
+_† M2 ONLY - not on ABL Bio CEO TMA slide; scored from CPTAC only_  
+_‡ M1 ONLY - no usable CPTAC data; scored from TMA only_  
+_⚠ NR = Not Ranked - no expression data from TMA or CPTAC PDC; medical score not computed; excluded from quadrant chart_
 
 Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
 - Shifted: HNSCC (M1=#2, M2=#5) | Gastric/GEJ (M1=#5, M2=#3)
@@ -468,12 +467,10 @@ Concordance (5 indications with both methods): 3/5 stable | 2/5 shifted
 | ⚠ NR | Colorectal* | — | — | — | 86.5 | — |
 | ⚠ NR | Cervical* | — | — | — | 27.8 | — |
 
-\* NEOK Bio CEO priority indication (thoracic / gastrointestinal / gynecological)
-† M2 ONLY — not on ABL Bio CEO TMA slide; scored from CPTAC only
-‡ M1 ONLY — no usable CPTAC data; scored from TMA only
-⚠ NR = Not Ranked — no expression data from TMA or CPTAC PDC;
-  medical score not computed; excluded from quadrant chart;
-  commercial scores shown for reference only
+_\* NEOK Bio CEO priority indication (thoracic / gastrointestinal / gynecological)_  
+_† M2 ONLY — not on ABL Bio CEO TMA slide; scored from CPTAC only_  
+_‡ M1 ONLY — no usable CPTAC data; scored from TMA only_  
+_⚠ NR = Not Ranked — no expression data from TMA or CPTAC PDC; medical score not computed, excluded from quadrant chart and commercial scores shown for reference only_  
 
 ### Quadrant Visualization
 <img src="../data/images/01_indication_quadrant_final.png" width="900">  
