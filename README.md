@@ -20,7 +20,7 @@ This project is a data-driven analysis identifying the optimal initial indicatio
 > <u>Advisory note:</u> IP advisory was provided by Stacey Ivanchuk during the ITCS Program.
 >
 
-<p align="center">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+---
 
 ## Background
 
@@ -32,7 +32,6 @@ NEOK Bio received FDA IND clearance for NEOK001 in January 2026 and plans to ini
 
 NEOK Bio's CEO, Mayank Gandhi, has indicated the dual-targeting strategy is designed to address a wide range of indications with large unmet needs, with initial focus on <u>thoracic, gastrointestinal, and gynecological cancers</u> — tumor types known to be sensitive to Topo-I inhibition.
 
-<p align="center">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 
 ## Objective
 To present a **strategic recommendation** to NEOK Bio senior leadership for  NEOK001's optimal initial Phase 1 indication(s), supported by:
@@ -46,7 +45,7 @@ To present a **strategic recommendation** to NEOK Bio senior leadership for  NEO
 > This analysis is focused on the **United States market**, the largest global oncology market and the primary commercialization target for NEOK001 (given NEOK Bio's US-based operations and FDA IND clearance).
 >
 
-<p align="center">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+---
 
 ## How to Read This Repo
 **Non-technical readers:** Read reports 1 to 6 in the `reports/` folder.
