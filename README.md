@@ -86,28 +86,26 @@ NEOK001-Strategy/
 
 ### File Contents
 
-### File Contents
+#### Reports
+- **`1_ADC_Biology.md`** — ADC fundamentals, design, bispecific rationale
+- **`2_NEOK001_Asset.md`** — ABL Bio, NEOK Bio, NEOK001 MoA, preclinical data
+- **`3_Indication_Scoring.md`** — Clinical and commercial scoring of candidate indications
+- **`4_Market_Research.md`** — Market analysis, ADC benchmarking, market sizing (TAM/SAM/SOM), pricing assumptions
+- **`5a_IP_Global_ADC_Landscape.md`** — Global ADC patent landscape and competitive intensity
+- **`5b_IP_US_ADC_Landscape.md`** — US ADC patent landscape: AI-driven claim classification, competitor strategy, technical overlap analysis
+- **`5c_IP_NEOK001_Portfolio.md`** — NEOK001-specific patent strategy
+- **`6_Recommendation.md`** — **Final recommendation and report**
 
-| Path | File | Type | Description |
-|------|------|------|-------------|
-| `reports/` | `1_ADC_Biology.md` | Report | ADC fundamentals, Design, Bispecific rationale |
-| `reports/` | `2_NEOK001_Asset.md` | Report | ABL Bio, NEOK Bio, NEOK001 MoA, Preclinical data |
-| `reports/` | `3_Indication_Scoring.md` | Report | Clinical and commercial scoring of candidate indications, Indication Selection |
-| `notebooks/` | `3_indication_scoring.ipynb` | Notebook | Code for indication scoring analysis |
-| `reports/` | `4_Market_Research.md` | Report | Market analysis, ADC benchmarking, Market sizing (TAM/SAM/SOM), Pricing assumptions (dosing, WAC) |
-| `notebooks/` | `4_market_research.ipynb` | Notebook | Code for market research |
-| `reports/` | `5a_IP_Global_ADC_Landscape.md` | Report | Global ADC patent landscape and competitive intensity |
-| `notebooks/5_ip_portfolio/` | `5a_global_adc_oncology_landscape.ipynb` | Notebook | Code for global ADC patent landscape analysis |
-| `reports/` | `5b_IP_US_ADC_Landscape.md` | Report | US ADC patent landscape: AI-driven claim classification, competitor strategy, technical overlap analysis |
-| `notebooks/5_ip_portfolio/` | `5b-1_us_adc_patents.ipynb` | Notebook | Code for US ADC patent landscape analysis |
-| `notebooks/5_ip_portfolio/` | `5b-2_technical_competitors.ipynb` | Notebook | Code for US ADC patent landscape analysis |
-| `reports/` | `5c_IP_NEOK001_Portfolio.md` | Report | NEOK001-specific patent strategy |
-| `notebooks/5_ip_portfolio/` | `5c_neok001_portfolio.ipynb` | Notebook | Code and Detailed claim analysis for NEOK001-related patents |
-| `reports/` | `6_Recommendation.md` | Report | **Final recommendation and report** |
-| `data/raw/` | `*` | Data | Source datasets (primarily patent data exported from the Lens) |
-| `data/processed/` | `*` | Data | Cleaned and analysis-ready datasets generated during workflows |
-| `data/ai_results/` | `*` | Data | Outputs from AI-based claim classification and related analyses |
-| `data/images/` | `*` | Data | Figures, plots and visual assets |
+#### Notebooks
+- **`3_indication_scoring.ipynb`** — Code for indication scoring analysis
+- **`4_market_research.ipynb`** — Code for market research
+- **`5_ip_portfolio/5a_global_adc_oncology_landscape.ipynb`** — Code for global ADC patent landscape analysis
+- **`5_ip_portfolio/5b-1_us_adc_patents.ipynb`** — Code for US ADC patent landscape analysis
+- **`5_ip_portfolio/5b-2_technical_competitors.ipynb`** — Code for technical competitor overlap analysis
+- **`5_ip_portfolio/5c_neok001_portfolio.ipynb`** — Code and detailed claim analysis for NEOK001-related patents
 
----
-
+#### Data Folders
+- **`data/raw/`** — Source datasets (primarily patent data exported from The Lens)
+- **`data/processed/`** — Cleaned and analysis-ready datasets generated during workflows
+- **`data/ai_results/`** — Outputs from AI-based claim classification and related analyses
+- **`data/images/`** — Figures, plots and visual assets
