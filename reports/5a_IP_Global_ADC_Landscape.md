@@ -150,3 +150,12 @@ NEOK001's Phase 1 timeline (2026) and projected approval window (2030+) coincide
 
 <br>
 <hr style="border: 2px solid black;">
+
+## 7. Limitations
+
+- Patent applications are published 18 months from earliest priority date. Due to this 18-month publication delay of patent applications, filings from 2025–2026 may be underrepresented in public databases like Lens. Therefore, 2024 & 2025 numbers should be interpreted cautiously
+- Search limited to patents with explicit payload CPC classifications in Lens. CPC-based filtering could also miss key players that are missing or avoid ADC-specific classifications
+
+
+<br>
+<hr style="border: 2px solid black;">

@@ -2,7 +2,7 @@
 *Author: Yuying Fan*  
 *Project developed as independent strategic analysis, April 2026*  
 
-## Project Aim - Strategic Recommendation for Phase 1 Clinical Development
+## Project Aim - Strategic Recommendation for NEOK001 Development
 
 This project began as a student consulting case study through the Life Sciences Career Development Society (LSCDS) at University of Toronto, where I contributed and worked on the IP landscape workstream of the pipeline group. Building on the advisors' feedback and recommendations from that engagement, this repository represents my own independent extension of the analysis - incorporating proteomic expression scoring across 12 candidate indications, commercial opportunity sizing, data-driven indication prioritization recommendation for Phase 1 clinical development, AI-assisted competitive patent landscaping, and in-depth analysis of current patent portfolio.
 
