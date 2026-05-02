@@ -69,7 +69,7 @@ _° Elahere US values obtained from AbbVie Q4 and Full-Year 2024 Financial Resul
 ---
 
 ### ADC market context:
-In 2024, top-selling ADCs were Enhertu ($3.75B), Kadcyla ($2.32B), Adcetris ($1.91B), Padcev ($1.59B), and Trodelvy ($1.40B)  
+In 2024, top-selling ADCs were Enhertu ($3.75B), Kadcyla ($2.32B), Adcetris ($1.91B), Padcev ($1.59B), and Trodelvy ($1.32B)  
 - No approved ADC targets ROR1 or B7-H3 → NEOK001 would be first-in-class for both targets
 - No approved ADC exists for pancreatic cancer → NEOK001's potential primary indication has a completely clear field
 
@@ -82,7 +82,7 @@ Higher DAR = more payload molecules per antibody = more potent killing.
 
 The most commercially successful recent ADCs use high DAR:
 - Enhertu:  DAR 7.8 → $3.75B in 2024 — highest-selling ADC
-- Trodelvy: DAR 7.6 → $1.40B in 2024 — base case benchmark
+- Trodelvy: DAR 7.6 → $1.32B in 2024 — base case benchmark
 - Padcev:   DAR 3.8 → $1.59B in 2024 — lower DAR, MMAE payload  
 - _NEOK001's DAR with the Synaffix SYNtecan-E linker is mentioned in their [[AACR 2026 poster abstract](https://www.abstractsonline.com/pp8/#!/21436/presentation/5396)]; DAR = 4_
 
@@ -272,7 +272,7 @@ Assumed: single infusion Q3W (common ADC schedule)
 
 <img src="../data/images/02_neok001_revenue_projection.png" width="900">  
 
-*NEOK001 projected US sales (2L+ SAM, Years 0–4 post-approval), scaled from Trodelvy TNBC trajectory adjusted for PDAC pool size and WAC difference. ±25% range reflects PDAC-specific clinical and market uncertainties.*
+*NEOK001 projected US sales (2L+ SAM, Years 0–4 post-approval), scaled from Trodelvy TNBC trajectory adjusted for PDAC pool size and WAC difference. Year 4 base case ~$392M (range ~$294M–$490M). ±25% range reflects PDAC-specific clinical and market uncertainties. Year 0 corresponds to a partial-year launch equivalent to Trodelvy's April 2020 approval.*
 
 <br>
 <hr style="border: 2px solid black;">
@@ -296,7 +296,7 @@ Two SAM estimates reflecting near-term 2L+ entry and long-term 1L expansion:
 | Metric | Value | 
 |--------|-------|
 | Metastatic PDAC patients/yr | ~34,440 (67,530 × 51% metastatic) |
-| % reaching 2L+ therapy | ~46% |
+| % reaching 2L+ therapy | ~50% |
 | ROR1 detection rate (CPTAC) | 92% |
 | Annual WAC assumption | ~$200K |
 | **SAM - near-term (2L+)** | **~$3.2B** (15,842 pts × $200K) |
@@ -318,14 +318,14 @@ Realistic peak market share based on near-term 2L+ SAM (~$3.2B), scaled from Tro
 
 | Scenario | Market Share | Patients/yr | Peak Annual Revenue | Reference |
 |----------|-------------|------------|-------------------|-----------|
-| Conservative | 5–8% of SAM | ~800–1,300 | ~$160M–$250M | Elahere-paced (CDx required) |
-| Base case | 10–15% of SAM | ~1,600–2,400 | ~$320M–$480M | Trodelvy-paced, ~20% CDx discount |
-| Upper bound | 18–25% of SAM | ~2,900–4,000 | ~$570M–$790M | Trodelvy-paced, no CDx |
+| Conservative | 5–8% of SAM | ~800–1,300 | ~$160M–$250M | Elahere-paced (CDx required, slower ramp) |
+| Base case | 10–15% of SAM | ~1,600–2,400 | ~$320M–$480M | Trodelvy benchmark (~12%) ± analog uncertainty |
+| Upper bound | 18–25% of SAM | ~2,900–4,000 | ~$570M–$790M | Outperforms Trodelvy on bispecific selectivity rationale |
 
 **Base case rationale:**  
 Trodelvy achieved ~12% SAM penetration in TNBC by Year 4 post-approval
 (~2,410 patients treated out of ~19,475 addressable)
-- 19,475 addressable → 48,687 TNBC incidence × 40% metastatic eligible, from Report 4
+- 19,475 addressable → 48,687 TNBC incidence × 40% metastatic eligible, from Report 3 (`3_indication_scoring.ipynb`)
 - 2,410 patients treated → $877M Year 4 US sales ÷ $364K annual WAC 
 
 ---
@@ -375,14 +375,18 @@ WAC assumption reflects a single Q3W infusion — actual pricing
 will depend on Phase 1/2 data, competitive landscape at approval,
 and payer negotiations.
 
-**4. Trodelvy penetration back-calculation**
+**4. Trodelvy penetration back-calculation overstates TNBC 2L+ uptake**
 The ~12% SAM penetration estimate for Trodelvy was derived by
 dividing Year 4 US sales ($877M) by annual WAC ($364K) to estimate
 patients treated (~2,410), then dividing by the addressable pool
-(~19,475). This assumes all revenue came from the TNBC 2L+
-indication — Trodelvy has since expanded to HR+/HER2- MBC which
-may inflate the penetration estimate for the original TNBC 2L+
-population specifically.
+(~19,475 TNBC 2L+ patients). However, by Year 4 (2024), Trodelvy
+had expanded to 1L mTNBC and to HR+/HER2- MBC — patients in the
+numerator span multiple lines and indications, while the denominator
+is the original TNBC 2L+ pool only. The true Year-4 penetration in
+the directly-comparable launch setting (TNBC 2L+) was almost
+certainly lower than 12%. Using ~12% as the base case midpoint
+is therefore optimistic; the lower-bound scenario partially absorbs
+this bias.
 
 <br>
 <hr style="border: 2px solid black;">
