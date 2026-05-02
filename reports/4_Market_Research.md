@@ -319,8 +319,8 @@ Realistic peak market share based on near-term 2L+ SAM (~$3.2B), scaled from Tro
 | Scenario | Market Share | Patients/yr | Peak Annual Revenue | Reference |
 |----------|-------------|------------|-------------------|-----------|
 | Conservative | 5–8% of SAM | ~800–1,300 | ~$160M–$250M | Elahere-paced (CDx required) |
-| Base case | 10–15% of SAM | ~1,600–2,400 | ~$320M–$480M | Trodelvy-paced, ~20% CDx discount |
-| Upper bound | 18–25% of SAM | ~2,900–4,000 | ~$570M–$790M | Trodelvy-paced, no CDx |
+| Base case | 10–15% of SAM | ~1,600–2,400 | ~$320M–$480M | Trodelvy-paced |
+| Upper bound | 18–25% of SAM | ~2,900–4,000 | ~$570M–$790M | Outperforms Trodelvy |
 
 **Base case rationale:**  
 Trodelvy achieved ~12% SAM penetration in TNBC by Year 4 post-approval
