@@ -2,7 +2,7 @@
 *Author: Yuying Fan | April 2026*
 
 ## TL;DR
-> **Initiate Phase 1 in pancreatic ductal adenocarcinoma (PDAC) as primary, with NSCLC (Lung Squamous) and gastric/GEJ as the secondary and tertiary indication, respectively.** PDAC ranked #1 using the second expression method, had the highest unmet need of the 12 indications evaluated, faces the cleanest competitive ADC landscape and addresses a ~$3.2B near-term US 2L+ market with a ~$320M–$480M base-case 5-year SOM. In terms of IP, the asset's bispecific ADC composition is not directly protected by a granted or pending composition patent. Family 24 (ROR1 bispecific format) is the most important pending filing in the portfolio and warrants prosecution focus and continuation strategy ahead of Phase 1 readout.
+> **Initiate Phase 1 in pancreatic ductal adenocarcinoma (PDAC) as primary, with NSCLC (Lung Squamous) and gastric/GEJ as the secondary and tertiary indication, respectively.** PDAC ranked #1 using the second expression method, had the highest unmet need of the 12 indications evaluated, faces the cleanest competitive ADC landscape and addresses a ~$3.2B near-term US 2L+ market with a with a ~$320M–$480M base-case peak annual revenue (Year 4 post-launch). In terms of IP, the asset's bispecific ADC composition is not directly protected by a granted or pending composition patent. Family 24 (ROR1 bispecific format) is the most important pending filing in the portfolio and warrants prosecution focus and continuation strategy ahead of Phase 1 readout.
 
 ---
 
