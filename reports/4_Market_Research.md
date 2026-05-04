@@ -211,15 +211,15 @@ The missing input for scaling is the annual WAC — for both Trodelvy (benchmark
 ### Trodelvy (Sacituzumab govitecan)
 *Source: [Gilead Sciences WAC disclosure](https://www.gileadpriceinfo.com/trodelvy) (as of 1 Jan 2026) ; [drugs.com Dosage Information](https://www.drugs.com/dosage/trodelvy.html) (as of 31 Mar 2025)*
 
-Dosing: 10 mg/kg on Days 1 and 8 of 21-day cycle (2 infusions/cycle)  
-WAC per cycle: $20,918 (2 infusions)  
-
-Per infusion: $20,918 ÷ 2 = $10,459  
-Dose per infusion: 10 mg/kg × 72 kg = 720 mg  
-Vials per infusion: 720 mg ÷ 180 mg = 4 vials  
-Cost per vial: $10,459 ÷ 4 = $2,615/vial  
-Cost per cycle: $10,459 × 2 infusions = $20,918  
-Cycles per year: 365 ÷ 21 = ~17.4  
+> Dosing: 10 mg/kg on Days 1 and 8 of 21-day cycle (2 infusions/cycle)  
+> WAC per cycle: $20,918 (2 infusions)  
+> 
+> Per infusion: $20,918 ÷ 2 = $10,459  
+> Dose per infusion: 10 mg/kg × 72 kg = 720 mg  
+> Vials per infusion: 720 mg ÷ 180 mg = 4 vials  
+> Cost per vial: $10,459 ÷ 4 = $2,615/vial  
+> Cost per cycle: $10,459 × 2 infusions = $20,918  
+> Cycles per year: 365 ÷ 21 = ~17.4  
 Annual WAC: $20,918 × 17.4 = <span style="color: blue;">~$364K/yr</span>
 
 ---
