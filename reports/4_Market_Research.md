@@ -219,37 +219,37 @@ The missing input for scaling is the annual WAC — for both Trodelvy (benchmark
 > Vials per infusion: 720 mg ÷ 180 mg = 4 vials  
 > Cost per vial: $10,459 ÷ 4 = $2,615/vial  
 > Cost per cycle: $10,459 × 2 infusions = $20,918  
-> Cycles per year: 365 ÷ 21 = ~17.4  
-Annual WAC: $20,918 × 17.4 = <span style="color: blue;">~$364K/yr</span>
+> Cycles per year: 365 ÷ 21 = 17.4  
+> Annual WAC: $20,918 × 17.4 = **about $364K/yr**
 
 ---
 
 ### Padcev (Enfortumab vedotin) — Single Agent 2L+
 *Source: [Pfizer CT WAC disclosure](https://cdn.pfizer.com/pfizercom/products/ctprescribers/PADCEVCTPriceDisclosureShortForm01092026.pdf) (as of 9 Jan 2026) ; [drugs.com Dosage Information for combination use](https://www.drugs.com/dosage/padcev-injection.html) (as of 21 Nov 2025)*  
 
-Dosing: 1.25 mg/kg on Days 1, 8, and 15 of 28-day cycle (3 infusions/cycle)  
-WAC per vial: $4,213.50 (30mg single-dose vial)  
-
-Dose per infusion: 1.25 mg/kg × 72 kg = 90 mg  
-Vials per infusion: 90 mg ÷ 30 mg = 3 vials  
-Cost per infusion: 3 × $4,213.50 = $12,640.50  
-Cost per cycle: $12,640.50 × 3 infusions = $37,921.50  
-Cycles per year: 365 ÷ 28 = ~13  
-Annual WAC: $37,921.50 × 13 = <span style="color: blue;">~$493K/yr</span>
+> Dosing: 1.25 mg/kg on Days 1, 8, and 15 of 28-day cycle (3 infusions/cycle)  
+> WAC per vial: $4,213.50 (30mg single-dose vial)  
+> 
+> Dose per infusion: 1.25 mg/kg × 72 kg = 90 mg  
+> Vials per infusion: 90 mg ÷ 30 mg = 3 vials  
+> Cost per infusion: 3 × $4,213.50 = $12,640.50  
+> Cost per cycle: $12,640.50 × 3 infusions = $37,921.50  
+> Cycles per year: 365 ÷ 28 = ~13  
+> Annual WAC: $37,921.50 × 13 = **about $493K/yr**
 
 ---
 
 ### Onivyde (Irinotecan liposomal) — Current PDAC 2L+ SOC
 *Source: [drugs.com Price](https://www.drugs.com/price-guide/onivyde) and [Dosage Information](https://www.drugs.com/dosage/irinotecan-liposomal.html) (as of 3 April 2026)*
 
-Dosing: 70 mg/m² IV every 2 weeks (Q2W), in combination with 5-FU/leucovorin  
-WAC per vial: $1,868.86 (10mL, 4.3 mg/mL = 43mg per vial)  
-
-Dose per infusion: 70 mg/m² × 1.7 m² (standard BSA) = 119mg  
-Vials per infusion: 119mg ÷ 43mg = 2.77 → 3 vials  
-Cost per infusion: 3 × $1,868.86 = $5,606.58  
-Infusions per year: 365 ÷ 14 = ~26  
-Annual WAC: $5,606.58 × 26 = <span style="color: blue;">~$146K/yr</span>
+> Dosing: 70 mg/m² IV every 2 weeks (Q2W), in combination with 5-FU/leucovorin  
+> WAC per vial: $1,868.86 (10mL, 4.3 mg/mL = 43mg per vial)  
+> 
+> Dose per infusion: 70 mg/m² × 1.7 m² (standard BSA) = 119mg  
+> Vials per infusion: 119mg ÷ 43mg = 2.77 → 3 vials  
+> Cost per infusion: 3 × $1,868.86 = $5,606.58  
+> Infusions per year: 365 ÷ 14 = ~26  
+> Annual WAC: $5,606.58 × 26 = **about $146K/yr**
 
 ---
 
