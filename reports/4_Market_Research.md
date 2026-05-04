@@ -183,12 +183,12 @@ projections — same Topo-I payload class, first ADC in indication,
 However, Trodelvy's penetration was achieved without a patient
 screening step and likely **overstates** NEOK001's achievable
 penetration if a companion diagnostic is ultimately required.
-Elahere provides the CDx-adjusted reference — its launch trajectory
-under a required FRα companion diagnostic is the most relevant
-commercial precedent if NEOK001 requires dual ROR1/B7-H3 screening.
+A ±25% buffer is therefore applied around the Trodelvy-scaled base case to capture this uncertainty.
 
-_Padcev informs the upper bound trajectory (no CDx, strong Phase 3
-data, rapid 1L expansion) but is not used as a quantitative scaler._
+The buffer is conceptually anchored to two qualitative precedents:  
+- **Elahere** as the CDx-adjusted floor: its slower ramp under required FRα testing is the most relevant precedent if NEOK001 ends up requiring dual ROR1/B7-H3 screening  
+- **Padcev** as the upper-bound ceiling: its rapid uptake on strong Phase 3 data and 1L expansion is the most relevant precedent if NEOK001's bispecific selectivity broadens the eligible population  
+Neither Elahere nor Padcev is used as a quantitative scaler; the ±25% range is judgment-based, informed by the directional trajectories of these benchmarks rather than computed from their penetration rates.
 
 <br>
 <hr style="border: 2px solid black;">
