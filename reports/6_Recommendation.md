@@ -14,7 +14,11 @@
 | **Secondary** | NSCLC (Lung Squamous) | Highest ROR1 protein (+0.200 CPTAC), least competitive NSCLC (6 Ph2/3 trials), strongest fallback primary |
 | **Tertiary** | Gastric/GEJ | Only 1 direct competitor, unique high-intensity B7H3 expression (H-score 201–300) |
 
-*Full analysis: [`reports/4_Market_Research.md`](4_Market_Research.md)*  
+*Full analysis: [`reports/3_Indication_Scoring.md`](3_Indication_Scoring.md) & [`reports/4_Market_Research.md`](4_Market_Research.md)*  
+
+<img src="../data/images/03_indication_quadrant_final.png" width="700">  
+
+<img src="../data/images/04_neok001_revenue_projection.png" width="700">  
 
 
 ## IP Recommendation
@@ -32,8 +36,10 @@ _Strategic implication: Family 24 prosecution becomes the most important IP acti
 - **Data exclusivity reliance** - 12-year biologics exclusivity will provide meaningful extension of runway given the current thin patent moat
 - **Synaffix linker IP dependency** which is not solvable through filings, but warrants attention in this licensing relationship and any further downstream patent filings
   
-
 *Full analysis: [`5_ip_portfolio`](../notebooks/5_ip_portfolio/) folder* 
 
-## Limitations
-Limitations specific to each workstream are mentioned at the end of their corresponding report (Reports 3–5c). Please refer to those for analysis-specific caveats.
+<img src="../data/images/05c_NEOK001_US_Expiry.png" width="1000">
+
+> ## Limitations
+> Limitations specific to each workstream are mentioned at the end of their corresponding report (Reports 3–5c). Please refer to those for analysis-specific caveats.  
+>  <br>

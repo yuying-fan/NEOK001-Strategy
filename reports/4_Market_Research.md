@@ -270,7 +270,7 @@ Assumed: single infusion Q3W (common ADC schedule)
 ## 5. Revenue Trajectory
 *Trodelvy-anchored 5-year post-approval projection*
 
-<img src="../data/images/02_neok001_revenue_projection.png" width="900">  
+<img src="../data/images/04_neok001_revenue_projection.png" width="900">  
 
 *NEOK001 projected US sales (2L+ SAM, Years 0–4 post-approval), scaled from Trodelvy TNBC trajectory adjusted for PDAC pool size and WAC difference. Year 4 base case ~$392M (range ~$294M–$490M). ±25% range reflects PDAC-specific clinical and market uncertainties. Year 0 corresponds to a partial-year launch equivalent to Trodelvy's April 2020 approval.*
 

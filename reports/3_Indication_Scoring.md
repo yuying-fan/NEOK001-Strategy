@@ -473,7 +473,7 @@ _‡ M1 ONLY — no usable CPTAC data; scored from TMA only_
 _⚠ NR = Not Ranked — no expression data from TMA or CPTAC PDC; medical score not computed, excluded from quadrant chart and commercial scores shown for reference only_  
 
 ### Quadrant Visualization
-<img src="../data/images/01_indication_quadrant_final.png" width="900">  
+<img src="../data/images/04_indication_quadrant_final.png" width="900">  
 
 <span style="color: blue;">Long-term addressable market (1L metastatic US patient pool) is used, as ADCs typically launch 2L+ with goal of expanding to 1L as data matures</span>
 
