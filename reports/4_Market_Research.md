@@ -31,7 +31,7 @@ This report will thus focus on analyzing the market for PDAC as NEOK001's primar
 ---
 
 ### FDA-Approved ADC Landscape (as of 2026)
-*Sources: [[1](https://pubmed.ncbi.nlm.nih.gov/40307936/)], [[2](biochempeg.com/article/427.html)], [[3](biochempeg.com/article/1462.html)]*
+*Sources: [[1](https://pubmed.ncbi.nlm.nih.gov/40307936/)], [[2](https://www.biochempeg.com/article/427.html)], [[3](https://www.biochempeg.com/article/1462.html)]*
 
 As of April 2026, 15 ADCs have received FDA approval across hematologic malignancies and solid tumors.
 
