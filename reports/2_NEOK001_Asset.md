@@ -116,7 +116,7 @@ CS5001 (created by LigaChem Biosciences + <span style="color: blue;">ABL Bio</sp
 - Antitumor activity in multiple advanced solid tumors and lymphomas
 
 ### <u>Bispecific Structure of NEOK001</u>
-NEOK001 is designed with a **2+2 symmetric structure**: two binding arms for ROR1 and two for B7-H3
+NEOK001 is designed with a **2+2 symmetric structure**: two binding arms for ROR1 and two for B7-H3  
 To selectively engage cancer cells co-expressing both antigens. It is conjugated to SYNtecan-E, a linker-payload containing exatecan (Topo-I inhibitor).
 
 ```
