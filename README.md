@@ -17,7 +17,7 @@ This project is a data-driven analysis identifying the optimal initial indicatio
 > 
 > <u>Attribution and use:</u> Additional background information on NEOK Bio and ABL Bio was compiled from publicly available materials; including press releases, investor presentations, company reports, and disclosed preclinical results. This work is an independent analysis and is not affiliated with NEOK Bio or ABL Bio.
 > 
-> <u>Advisory note:</u> IP advisory was provided by Stacey Ivanchuk during the ITCS Program.
+> <u>Acknowledgements: Stacey Ivanchuk served as IP advisor during the ITCS Program, providing guidance within the broader context of the case study experience. Additional thanks to Pipeline mentors, Heather VanSeggelen & Katie Lye, and the ITCS team for program-level support and feedback.
 >
 
 ---
